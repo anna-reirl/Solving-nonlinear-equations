@@ -6,11 +6,13 @@ accuracy = 0.00001
 
 while true
 
+    # проверяем условие для нахождения корня
     if abs(f(x)) <= accuracy
         print(x)
         break
     end
 
+    # меняем приближение согласно формуле
     global x = x - f(x) / f1(x)
 
 end

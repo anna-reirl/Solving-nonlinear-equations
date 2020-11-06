@@ -7,6 +7,7 @@ step = (interval[2] - interval[1]) / n #длина разбиения
 
 totalSum = 0
 
+#проходимся по разбиениям согласно формуле сумме ряда
 for i = 0:(n - 1)
     local x1 = interval[1] + i * step #x(i)
     local x2 = x1 + step #x(i + 1)

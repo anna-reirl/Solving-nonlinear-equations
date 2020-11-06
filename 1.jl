@@ -9,11 +9,14 @@ while true
 
     middle = (interval[1] + interval[2]) / 2
 
+    # если меньше заданной точности
     if abs(f(middle)) <= accuracy
         print(middle)
         break
     end
 
+
+    # проверяем условия и уменьшаем интервал
     if f(middle) * f(interval[1]) < 0
         global interval = [interval[1], middle]
         continue
